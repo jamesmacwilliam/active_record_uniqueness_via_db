@@ -37,6 +37,7 @@ Or install it yourself as:
     $ gem install active_record_uniqueness_via_db
 
 run this command to set up the initializer:
+
 Note: if upgrading from v0.1.0, re-run the generator to add the
 uniqueness validator initializer
 
@@ -60,7 +61,7 @@ Note: to add databases, add a file under `lib/adapters/db_adapter_name.rb`
 that implements the `error_matches_att` method
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/active_record_uniqueness_via_db. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jamesmacwilliam/active_record_uniqueness_via_db. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
