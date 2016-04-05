@@ -37,6 +37,8 @@ Or install it yourself as:
     $ gem install active_record_uniqueness_via_db
 
 run this command to set up the initializer:
+Note: if upgrading from v0.1.0, re-run the generator to add the
+uniqueness validator initializer
 
 ```ruby
   rails generate active_record_uniqueness_via_db:install
