@@ -26,7 +26,6 @@ class ActiveRecordUniquenessViaDb::Validator
   def attribute_with_error
     @attr_with_error ||=
       attrs_to_rescue.
-      select { |attr, opts| adapter.error_matches_attr(attr, exception.message) }.
-      first
+      find { |attr, _| adapter.error_matches_attr(attr, exception.message) }
   end
 end
