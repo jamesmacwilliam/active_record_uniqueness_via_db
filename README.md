@@ -36,6 +36,12 @@ Or install it yourself as:
 
     $ gem install active_record_uniqueness_via_db
 
+run this command to set up the initializer:
+
+```ruby
+  rails generate active_record_uniqueness_via_db:install
+```
+
 ## Usage
 
 ```
