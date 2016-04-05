@@ -6,7 +6,7 @@ module ActiveRecord
       alias :old_initialize    :initialize
 
       def initialize(options)
-        if options[:via].present? && !options[:via] == :db
+        if options[:via].present? && !(options[:via] == :db)
           raise ArgumentError, "the :via option only accepts :db"
         end
         old_initialize(options)

@@ -11,7 +11,6 @@ class ActiveRecordUniquenessViaDb::Builder
     @attrs_to_rescue = record.
       instance_variable_get("@#{ActiveRecordUniquenessViaDb::ATTRS_IVAR}") || {}
     @attrs_to_rescue.delete(attr_name)
-    #binding.pry
   end
 
   def call

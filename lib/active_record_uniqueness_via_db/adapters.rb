@@ -1,0 +1,3 @@
+module ActiveRecordUniquenessViaDb::Adapters
+
+end
