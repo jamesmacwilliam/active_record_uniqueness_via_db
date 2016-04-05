@@ -7,7 +7,8 @@ module ActiveRecordUniquenessViaDb
       desc "Creates an ActiveRecordUniqunessViaDb initializer."
 
       def copy_initializer
-        template "active_record_uniqueness_via_db.rb", "config/initializers/active_record_uniqueness_via_db.rb"
+        copy_file "active_record_uniqueness_via_db.rb", "config/initializers/active_record_uniqueness_via_db.rb"
+        copy_file "active_record_uniqueness_via_db_validator.rb", "config/initializers/active_record_uniqueness_via_db_validator.rb"
       end
     end
   end
