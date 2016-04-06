@@ -1,4 +1,5 @@
 require 'active_record_uniqueness_via_db/adapters/mysql2'
+require 'active_record_uniqueness_via_db/adapters/postgresql'
 require 'active_support/inflector'
 
 class ActiveRecordUniquenessViaDb::Adapter
