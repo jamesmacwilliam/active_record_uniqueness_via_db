@@ -36,14 +36,16 @@ Or install it yourself as:
 
     $ gem install active_record_uniqueness_via_db
 
-run this command to set up the initializer:
-
-Note: if upgrading from v0.1.0, re-run the generator to add the
-uniqueness validator initializer
-
-```ruby
-  rails generate active_record_uniqueness_via_db:install
-```
+Notes:
+- if you are upgrading from VERSION <= v0.1.1, remove the
+  initializers
+- if you use the `composite_primary_keys` gem, ensure that
+  `gem 'active_record_uniqueness_via_db'` is
+  included **after** the reference for `composite_primary_keys`.  (This is
+  necessary because `composite_primary_keys` rather than extending the
+  uniqueness validation overwrites it, in contrast, this gem just extends
+  the functionality so they play nice together as long as this gem comes
+  after that one).
 
 ## Usage
 

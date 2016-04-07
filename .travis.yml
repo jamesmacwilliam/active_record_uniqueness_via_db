@@ -2,3 +2,9 @@ language: ruby
 rvm:
   - 2.2.0
 before_install: gem install bundler -v 1.10.6
+before_script:
+  - gem install mysql2
+  - mysql -e 'create database myapp_test;'
+  - mysql myapp_test -e 'create table foos (bar varchar(36) NOT NULL, PRIMARY KEY(bar), UNIQUE KEY `index_foos_on_bar` (`bar`));'
+script:
+  - rspec spec
