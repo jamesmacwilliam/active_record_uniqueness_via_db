@@ -20,6 +20,8 @@ validate :some_key, uniqueness: { via: :db }
 the rails uniqueness validation already accepts options rather than a
 simple truthy value, this gem adds the `:via` key to those options
 
+-supported adapters: `mysql2`, `postgresql`
+
 ## Installation
 
 Add this line to your application's Gemfile:
