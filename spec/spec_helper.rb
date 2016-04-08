@@ -1,4 +1,2 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'active_record_uniqueness_via_db'
-
-c.filter_run_excluding :integration => true unless ENV["TEST_ENV"] == "travis"
