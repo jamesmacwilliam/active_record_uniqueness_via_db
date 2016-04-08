@@ -1,6 +1,5 @@
 module ActiveRecord
-  module Persistence
-    extend ActiveSupport::Concern
+  class Base
 
     cattr_accessor ActiveRecordUniquenessViaDb::ATTRS_IVAR
 

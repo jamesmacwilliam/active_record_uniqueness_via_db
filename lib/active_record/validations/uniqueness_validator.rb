@@ -1,6 +1,6 @@
 module ActiveRecord
   module Validations
-    class UniquenessValidator < ActiveModel::EachValidator
+    class UniquenessValidator
 
       alias :old_validate_each :validate_each
       alias :old_initialize    :initialize
